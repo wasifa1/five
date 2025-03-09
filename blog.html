@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body class = "bg-blue-50 mx-40 mt-6 mb-14">
+    <header>
+            <nav class = "flex flex-row justify-between bg-white p-6 rounded-2xl mb-5 items-center">
+                <!-- Left - Logo + img -->
+                <div class = "flex flex-row gap-2 items-center">
+                    <!-- Logo -->
+                    <div class = "flex flex-row items-center ">
+                       <img class = "" src="assets/logo.png" alt="">
+                    </div>
+                    <!-- Logo-Name -->
+                    <div>
+                        <h1 class = "text-3xl">Dev<span class = "font-bold">Board</span></h1>
+                    </div>
+                </div>
+                <!-- Back to Desk Button -->
+                <div  class = "text-white   bg-blue-600 py-2 px-4 rounded-lg text-center"><button id = "back-to-desk">Back to Desk</button></div>
+            </nav>
+    </header>
+    <main>
+        <!-- Title = Blogs -->
+        <h2 class = "font-bold text-3xl text-center m-6">Blogs</h2>
+        <!-- Q/A container -->
+        <div class = "w-full flex flex-col gap-6 text-lg">
+            <!-- Question 1 -->
+            <div class = "bg-white rounded-xl gap-4 p-4">
+                <p class = "font-bold pb-3 border-b border-dashed ">Question-1: What are the different ways to select an element in the DOM?</p>
+                <p class = "text-slate-600 pt-3">
+                    1. getElementById(id) : Selection through ID<br>
+                    2. getElementsByClassName(class) : Selection through class name<br>
+                    3. getElementsByTagName(tag) : Selection through tag<br>
+                    4. querySelector(selector) : Selection of first element fulfilling the condition<br>
+                    5. querySelectorAll(selector) : Selection of all elements fulfilling the condition 
+                </p>  
+            </div>
+            <!-- Question 2 -->
+            <div class = "bg-white rounded-xl gap-4 p-4">
+                <p class = "font-bold pb-3 border-b border-dashed ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+                <p class = "text-slate-600 pt-3">
+                    1. innerHTML : Sets HTML code inside an element<br>
+                    2. innerText : Sets the text inside an element without showing HTML tags<br>
+                    3. textContent : Sets text along with hidden elements
+                </p>  
+            </div>
+            <!-- Question 3 -->
+            <div class = "bg-white rounded-xl gap-4 p-4">
+                <p class = "font-bold pb-3 border-b border-dashed ">Question-3: What is event delegation in the DOM?</p>
+                <p class = "text-slate-600 pt-3">
+                    The process of using Event Listener on parent instead of using it separately for each child is Event Delegation. 
+                </p>  
+            </div>
+            <!-- Question 4 -->
+            <div class = "bg-white rounded-xl gap-4 p-4">
+                <p class = "font-bold pb-3 border-b border-dashed ">Question-4: What is event bubbling in the DOM?</p>
+                <p class = "text-slate-600 pt-3">
+                    The process in which events are handled in three steps :<br>
+                    1. Capture Phase : From parent to target element<br>
+                    2. Target Phase : Selecting the target element<br>
+                    3. Bubbling Phase : Goes back from target element to parent 
+                </p>  
+            </div>
+            <!-- Question 5 -->
+            <div class = "bg-white rounded-xl gap-4 p-4">
+                <p class = "font-bold pb-3 border-b border-dashed ">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+                <p class = "text-slate-600 pt-3">
+                    The processes are given below : <br>
+                   1. Create : document.createELement(tag)<br>
+                   2. Add : parentElement.appendChild(element)<br>
+                   3. Remove : parentElement.removeChild(element)
+                </p>  
+            </div>
+        </div>
+    </main>
+    <script src="blog.js"></script>
+</body>
+</html>

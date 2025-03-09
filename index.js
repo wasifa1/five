@@ -81,4 +81,5 @@ for(let i = 0; i < completedBtns.length ;i++){
 let discoverBlog = document.getElementById("discover-blog")
     .addEventListener("click", function(){
         window.location.href = "blog.html";  
-    })
+});
+
